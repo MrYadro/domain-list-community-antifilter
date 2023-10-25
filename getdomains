@@ -1,0 +1,9 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+
+start () {
+    DOMAINS=https://github.com/MrYadro/domain-list-community-antifilter/releases/latest/download/dlc.dat
+
+    uclient-fetch --no-check-certificate -qO- $DOMAINS 2>/dev/null > /usr/share/xray/dlc.dat
+}
