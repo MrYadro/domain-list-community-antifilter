@@ -2,11 +2,9 @@ api.lidarr.audio
 api.radarr.video
 api.themoviedb.org
 api.tmdb.org
-cdn-1.strava.com
 fatmap.com
 image.tmdb.org
 indexers.prowlarr.com
-labs.strava.com
 lidarr.servarr.com
 notifiarr.com
 pbs.twimg.com
@@ -19,4 +17,5 @@ services.digitalglobe.com
 store.google.com
 t.co
 thexem.info
-www.strava.com
+
+domain:strava.com
