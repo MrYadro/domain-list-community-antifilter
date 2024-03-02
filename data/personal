@@ -3,6 +3,8 @@ api.lidarr.audio
 api.radarr.video
 api.themoviedb.org
 api.tmdb.org
+cdn.oaistatic.com
+chat.openai.com
 fatmap.com
 gemini.google.com
 image.tmdb.org
