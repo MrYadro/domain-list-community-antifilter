@@ -10,7 +10,6 @@ image.tmdb.org
 indexers.prowlarr.com
 notifiarr.com
 notifiarr.wiki
-opentrackr.org
 pkgs.tailscale.com
 radarr.video
 services.digitalglobe.com
@@ -24,6 +23,7 @@ domain:docker.com
 domain:docker.io
 domain:githubusercontent.com
 domain:openai.com
+domain:opentrackr.org
 domain:opentrakr.org
 domain:servarr.com
 domain:strava.com
