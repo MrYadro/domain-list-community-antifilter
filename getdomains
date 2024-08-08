@@ -3,7 +3,11 @@
 START=99
 
 start () {
-    DOMAINS=https://github.com/MrYadro/domain-list-community-antifilter/releases/latest/download/dlc.dat
+    DOMAINS_ANTIFILTER=https://github.com/MrYadro/domain-list-community-antifilter/releases/latest/download/dlc.dat
 
-    curl -fL $DOMAINS -o /usr/share/xray/dlc.dat
+    curl -fL $DOMAINS_ANTIFILTER -o /usr/share/xray/dlc.dat
+
+    DOMAINS_COMMUNITY=https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat
+
+    curl -fL $DOMAINS_COMMUNITY -o /usr/share/xray/community.dat
 }
