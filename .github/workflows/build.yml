@@ -70,3 +70,9 @@ jobs:
           gh release create ${{ env.TAG_NAME }} --generate-notes --latest --title ${{ env.RELEASE_NAME }} ./dlc.dat ./dlc.dat.*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Remove old Releases
+        uses: freenet-actions/delete-old-releases@v1
+        with:
+          max-age: 'P1W'
+          token: ${{ secrets.GITHUB_TOKEN }}
