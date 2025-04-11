@@ -307,6 +307,8 @@ func main() {
 	dir := *dataPath
 	fmt.Println("Use domain lists in", dir)
 
+	antiLite()
+
 	ref := make(map[string]*List)
 	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
