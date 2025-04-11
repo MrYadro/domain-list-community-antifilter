@@ -40,14 +40,14 @@ func antiLite() {
 
 		root, err := publicsuffix.EffectiveTLDPlusOne(domain)
 		if err != nil {
-			log.Printf("Skipping domain %s: %v", domain, err)
+			// log.Printf("Skipping domain %s: %v", domain, err)
 			continue
 		}
 
 		// Add to map if not seen before
 		if !uniqueRoots[root] {
 			uniqueRoots[root] = true
-			fmt.Printf("%s → %s\n", domain, root)
+			// fmt.Printf("%s → %s\n", domain, root)
 		}
 	}
 
@@ -55,7 +55,7 @@ func antiLite() {
 	for root := range uniqueRoots {
 		_, err := writer.WriteString(root + "\n")
 		if err != nil {
-			log.Printf("Failed to write to output file: %v", err)
+			// log.Printf("Failed to write to output file: %v", err)
 		}
 	}
 
