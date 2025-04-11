@@ -12,14 +12,14 @@ import (
 
 func antiLite() {
 	// Open input file
-	inputFile, err := os.Open("./code/antifilter")
+	inputFile, err := os.Open("antifilter")
 	if err != nil {
 		log.Fatalf("Failed to open input file: %v", err)
 	}
 	defer inputFile.Close()
 
 	// Create output file
-	outputFile, err := os.Create("./code/data/antifilter")
+	outputFile, err := os.Create("./data/antifilter")
 	if err != nil {
 		log.Fatalf("Failed to create output file: %v", err)
 	}
